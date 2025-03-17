@@ -1,0 +1,256 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles - Desktop Default */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff6f61, #ff9478);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    animation: fadeSlideIn 1s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+    animation: popIn 1s ease;
+}
+
+header p {
+    font-size: 1.3rem;
+    animation: fadeIn 2s ease;
+}
+
+/* Main Section */
+main {
+    padding: 2rem;
+}
+
+.bucket-list {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: slideInUp 1s ease;
+}
+
+.bucket-list h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #ff6f61;
+}
+
+/* Form */
+#bucket-form {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#bucket-form input {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid #ff6f61;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+}
+
+#bucket-form button {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+#bucket-form button:hover {
+    background: #ff9478;
+    transform: scale(1.05);
+}
+
+/* List */
+.bucket-list ul {
+    list-style: none;
+}
+
+.bucket-list li {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bucket-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #ff6f61;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #aaa;
+    background: #f1f1f1;
+}
+
+.complete .icon i {
+    color: #28a745;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* ========================= */
+/* MEDIA QUERIES */
+/* ========================= */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .bucket-list {
+        padding: 1.5rem;
+    }
+
+    #bucket-form {
+        flex-direction: column;
+    }
+
+    #bucket-form input {
+        border-radius: 6px;
+        border-right: 2px solid #ff6f61;
+        margin-bottom: 1rem;
+    }
+
+    #bucket-form button {
+        border-radius: 6px;
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .bucket-list li {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    .icon {
+        font-size: 1.3rem;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .bucket-list {
+        padding: 1rem;
+    }
+
+    #bucket-form input {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    #bucket-form button {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .bucket-list li {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    .icon {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
+
+/* Large screens (Optional for extra-wide desktops) */
+@media (min-width: 1200px) {
+    .bucket-list {
+        max-width: 800px;
+    }
+
+    #bucket-form input {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    #bucket-form button {
+        padding: 1.2rem 2rem;
+        font-size: 1.2rem;
+    }
+
+    .bucket-list li {
+        font-size: 1.3rem;
+        padding: 1.2rem;
+    }
+
+    .icon {
+        font-size: 1.8rem;
+    }
+}

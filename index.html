@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Personal Bucket List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>My Personal Bucket List</h1>
+        <p>Dream big, achieve bigger!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="bucket-list">
+            <h2>Goals to Achieve</h2>
+
+            <!-- Form to add new item -->
+            <form id="bucket-form">
+                <input type="text" id="new-item" placeholder="Add a new goal..." required />
+                <button type="submit"><i class="fas fa-plus"></i> Add</button>
+            </form>
+
+            <ul id="bucket-items">
+                <li class="complete">
+                    <span class="icon"><i class="fas fa-check-circle"></i></span>
+                    Visit Japan
+                </li>
+                <li class="complete">
+                    <span class="icon"><i class="fas fa-check-circle"></i></span>
+                    Learn Guitar
+                </li>
+                <li>
+                    <span class="icon"><i class="far fa-circle"></i></span>
+                    Skydiving
+                </li>
+                <li>
+                    <span class="icon"><i class="far fa-circle"></i></span>
+                    Write a Book
+                </li>
+                <li>
+                    <span class="icon"><i class="far fa-circle"></i></span>
+                    Start a Business
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 My Bucket List. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
